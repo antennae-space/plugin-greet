@@ -1,0 +1,22 @@
+{
+  "id": "greet",
+  "name": "Greet",
+  "version": "1.0.0",
+  "apiVersion": 1,
+  "ide": ">=1.23.0 <2",
+  "assets": "https://github.com/DrSmithFr/web-ide-plugin-greet/releases/download/v{version}/greet-{arch}.tar.gz",
+  "backend": "bin/greet",
+  "permissions": ["files:read", "core:fs.list"],
+  "contributes": {
+    "tools": [{ "id": "greet", "label": "Greet", "icon": "sparkle", "zone": "right" }],
+    "tabViews": [{ "id": "note", "label": "Greet note" }],
+    "commands": [{ "id": "hello", "label": "Say hello from Greet" }],
+    "assistantTools": ["greet_count"],
+    "toolSchemas": {
+      "greet_count": {
+        "description": "Counts the files and folders at the root of the open project, as the Greet plugin sees them.",
+        "properties": {}
+      }
+    }
+  }
+}
