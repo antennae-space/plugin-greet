@@ -15,6 +15,10 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: '1.24'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
       - run: go vet ./...
       - run: TAG=${{ github.ref_name }} ./scripts/pack.sh
       - run: gh release create "${{ github.ref_name }}" dist/*.tar.gz --title "${{ github.ref_name }}" --notes "Greet ${{ github.ref_name }}"
