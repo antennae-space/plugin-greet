@@ -1,10 +1,10 @@
 # Greet, an example plugin of the Web IDE
 
-The example external plugin of [Web IDE](https://github.com/DrSmithFr/web-ide): a tool that greets you and counts the files of the project, a tab view, a command, and an assistant tool, with a backend. Fork it to start a plugin of your own; the how-to [Write a plugin](https://github.com/DrSmithFr/web-ide/blob/main/docs/howto/write-a-plugin.md) explains every part.
+The example external plugin of [Web IDE](https://github.com/antennae-space/web-ide): a tool that greets you and counts the files of the project, a tab view, a command, and an assistant tool, with a backend. Fork it to start a plugin of your own; the how-to [Write a plugin](https://github.com/antennae-space/web-ide/blob/main/docs/howto/write-a-plugin.md) explains every part.
 
 ## Install it
 
-In the IDE, *Settings → Plugins → Install a plugin*: `https://github.com/DrSmithFr/web-ide-plugin-greet`, version empty (the latest). Accept its two permissions, then tick its box on the project: its icon comes in the right rail.
+In the IDE, *Settings → Plugins → Install a plugin*: `https://github.com/antennae-space/plugin-greet`, version empty (the latest). Accept its two permissions, then tick its box on the project: its icon comes in the right rail.
 
 - *Read the files of the project* (`files:read`): its backend may read the project.
 - *Call fs.list of the IDE* (`core:fs.list`): its view and its backend may list the files through the IDE.

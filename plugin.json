@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "apiVersion": 1,
   "ide": ">=1.23.0 <2",
-  "assets": "https://github.com/DrSmithFr/web-ide-plugin-greet/releases/download/v{version}/greet-{arch}.tar.gz",
+  "assets": "https://github.com/antennae-space/plugin-greet/releases/download/v{version}/greet-{arch}.tar.gz",
   "backend": "bin/greet",
   "permissions": ["files:read", "core:fs.list"],
   "contributes": {
